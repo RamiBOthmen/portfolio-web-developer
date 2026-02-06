@@ -1,0 +1,166 @@
+{
+    "personal": {
+        "name": "Rami Ben Othmen",
+        "title": "Full-Stack Developer",
+        "email": "ramibenothmen15@gmail.com",
+        "location": "Tunisia",
+        "linkedIn": "https://linkedin.com/in/rami-ben-othmen",
+        "github": "https://github.com/RBenOthmen",
+        "tagline": "Building Secure & Scalable Applications",
+        "about": "Driven by passion for technical solutions. I specialize in building secure, high-performance web applications using modern technologies.",
+        "yearsExperience": 2,
+        "projectsCount": 10,
+        "certificationsCount": 5,
+        "languages": [
+            {
+                "name": "Arabic",
+                "level": "Native",
+                "flag": "🇹🇳"
+            },
+            {
+                "name": "English",
+                "level": "Professional",
+                "flag": "🇬🇧"
+            },
+            {
+                "name": "French",
+                "level": "Professional",
+                "flag": "🇫🇷"
+            }
+        ],
+        "interests": [
+            {
+                "name": "Chess",
+                "icon": "♟️"
+            },
+            {
+                "name": "Sports",
+                "icon": "⚽"
+            },
+            {
+                "name": "Documentaries",
+                "icon": "🎥"
+            },
+            {
+                "name": "Travel",
+                "icon": "✈️"
+            }
+        ]
+    },
+    "skills": [
+        {
+            "category": "Frontend",
+            "items": [
+                "Angular",
+                "TypeScript",
+                "HTML5/CSS3",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "category": "Backend",
+            "items": [
+                "Python",
+                "Java",
+                "Spring Boot",
+                "C#",
+                "ASP.NET Core"
+            ]
+        },
+        {
+            "category": "Databases",
+            "items": [
+                "PostgreSQL",
+                "MongoDB",
+                "SQL Server"
+            ]
+        },
+        {
+            "category": "DevOps",
+            "items": [
+                "Git",
+                "Docker",
+                "Linux",
+                "CI/CD"
+            ]
+        },
+        {
+            "category": "AI/ML",
+            "items": [
+                "Gemini AI",
+                "TensorFlow",
+                "Selenium"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "id": "jobhunter",
+            "title": "JobHunter",
+            "subtitle": "AI Talent Acquisition",
+            "description": "Cut response times by 20%, hiring efficiency +30%. Features AI-driven insights and scraping.",
+            "technologies": [
+                "Python",
+                "ASP.NET Core",
+                "Angular",
+                "MongoDB"
+            ],
+            "image": "assets/images/projects/jobhunter.jpg",
+            "link": "#",
+            "repo": "#"
+        },
+        {
+            "id": "pronunciation",
+            "title": "English Pronunciation Platform",
+            "subtitle": "EdTech Solution",
+            "description": "Boosted user engagement by 25%. Managed with SCRUM.",
+            "technologies": [
+                "Angular",
+                "Django",
+                "MySQL"
+            ],
+            "image": "assets/images/projects/english.jpg",
+            "link": "#",
+            "repo": "#"
+        }
+    ],
+    "experience": [
+        {
+            "company": "Naxxum Group",
+            "role": "Software Engineer Intern",
+            "period": "Feb 2024 - Jun 2024",
+            "description": "AI-driven talent acquisition system. Microservices, Clean Architecture, CQRS."
+        },
+        {
+            "company": "DSS Gates",
+            "role": "Full-Stack Developer Intern",
+            "period": "Mar 2022 - Jun 2022",
+            "description": "English pronunciation platform. MVC pattern, SCRUM methodology."
+        }
+    ],
+    "education": [
+        {
+            "school": "ISET Zaghouan",
+            "degree": "Master's in Engineering of Information Systems",
+            "period": "2022-2024",
+            "details": "Top of the Class"
+        },
+        {
+            "school": "Faculty of Sciences of Bizerte",
+            "degree": "Bachelor's in Software Engineering",
+            "period": "2019-2022"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Microsoft Azure AI Fundamentals",
+            "issuer": "Microsoft",
+            "date": "2023"
+        },
+        {
+            "name": "Google Data Analytics",
+            "issuer": "Google",
+            "date": "2023"
+        }
+    ]
+}

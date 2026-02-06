@@ -1,0 +1,25 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: [
+        "./src/**/*.{html,ts}",
+    ],
+    darkMode: 'class', // Enable class-based dark mode
+    theme: {
+        extend: {
+            colors: {
+                primary: '#4F46E5',  // Indigo
+                secondary: '#10B981', // Emerald
+                accent: '#F59E0B',     // Amber
+                dark: {
+                    bg: '#0F172A',
+                    surface: '#1E293B',
+                    text: '#F1F5F9'
+                }
+            },
+            fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+            }
+        },
+    },
+    plugins: [],
+}
