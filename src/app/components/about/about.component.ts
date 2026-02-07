@@ -38,16 +38,16 @@ import { PortfolioContent } from '../../models/content.model';
             </p>
 
             <!-- Highlights -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <div class="p-4 bg-gray-50 dark:bg-slate-700/50 rounded-lg border-l-4 border-primary">
-                <h4 class="font-bold text-gray-900 dark:text-white">Top of Class</h4>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Engineering of Info Systems (2024)</p>
+                <h4 class="font-bold text-gray-900 dark:text-white">Penetration Tester</h4>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Hack the Box</p>
               </div>
               <div class="p-4 bg-gray-50 dark:bg-slate-700/50 rounded-lg border-l-4 border-secondary">
-                <h4 class="font-bold text-gray-900 dark:text-white">AI Specialist</h4>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Integrated Gemini & Azure AI in projects</p>
+                <h4 class="font-bold text-gray-900 dark:text-white">Data Analyst</h4>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Google Data Analytics Certificate</p>
               </div>
-            </div>
+            </div> -->
 
             <div class="flex flex-col sm:flex-row gap-8">
               <!-- Languages -->

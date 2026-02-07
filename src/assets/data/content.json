@@ -7,7 +7,7 @@
         "linkedIn": "https://linkedin.com/in/rami-ben-othmen",
         "github": "https://github.com/RBenOthmen",
         "tagline": "Building Secure & Scalable Applications",
-        "about": "Driven by passion for technical solutions. I specialize in building secure, high-performance web applications using modern technologies.",
+        "about": "A highly competent Web Developer with a proven track record of building real-world applications. Skilled in planning, implementing, and monitoring web solutions, with additional strengths in project and database management. Driven by a strong passion for using technical expertise to support people and organizations.",
         "yearsExperience": 2,
         "projectsCount": 10,
         "certificationsCount": 5,
@@ -20,7 +20,7 @@
             {
                 "name": "English",
                 "level": "Professional",
-                "flag": "🇬🇧"
+                "flag": "🇺🇸"
             },
             {
                 "name": "French",
@@ -53,8 +53,8 @@
             "items": [
                 "Angular",
                 "TypeScript",
-                "HTML5/CSS3",
-                "Tailwind CSS"
+                "JavaScript",
+                "HTML5/CSS3"
             ]
         },
         {
@@ -62,8 +62,8 @@
             "items": [
                 "Python",
                 "Java",
-                "Spring Boot",
                 "C#",
+                "Spring Boot",
                 "ASP.NET Core"
             ]
         },
@@ -71,16 +71,17 @@
             "category": "Databases",
             "items": [
                 "PostgreSQL",
-                "MongoDB",
-                "SQL Server"
+                "MySQL",
+                "SQL Server",
+                "MongoDB"
             ]
         },
         {
             "category": "DevOps",
             "items": [
-                "Git",
-                "Docker",
+                "Git/GitHub",
                 "Linux",
+                "Docker",
                 "CI/CD"
             ]
         },
@@ -88,7 +89,6 @@
             "category": "AI/ML",
             "items": [
                 "Gemini AI",
-                "TensorFlow",
                 "Selenium"
             ]
         }
