@@ -105,7 +105,7 @@
                 "Angular",
                 "MongoDB"
             ],
-            "image": "assets/images/projects/jobhunter.jpg",
+            "image": "assets/images/projects/jobyhunter.png",
             "link": "#",
             "repo": "#"
         },
@@ -119,7 +119,7 @@
                 "Django",
                 "MySQL"
             ],
-            "image": "assets/images/projects/english.jpg",
+            "image": "assets/images/projects/english_4_lazy.png",
             "link": "#",
             "repo": "#"
         }
@@ -155,12 +155,14 @@
         {
             "name": "Microsoft Azure AI Fundamentals",
             "issuer": "Microsoft",
-            "date": "2023"
+            "date": "2023",
+            "image": "assets/images/certifications/ai.png"
         },
         {
-            "name": "Google Data Analytics",
-            "issuer": "Google",
-            "date": "2023"
+            "name": "English (Level C1)",
+            "issuer": "EF Set",
+            "date": "2024",
+            "image": "assets/images/certifications/english.png"
         }
     ]
 }

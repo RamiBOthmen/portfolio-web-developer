@@ -21,22 +21,16 @@ import { PortfolioContent } from '../../models/content.model';
                 [attr.data-aos-delay]="i * 100"
            >
               <div class="flex items-start justify-between mb-4">
-                 <!-- Icon Placeholder (could be image) -->
-                 <div class="p-3 bg-white dark:bg-slate-800 rounded-lg shadow-sm">
-                    <span class="text-2xl" *ngIf="cert.issuer.includes('Microsoft')">🟦</span>
-                    <span class="text-2xl" *ngIf="cert.issuer.includes('Google')">🇬</span>
-                    <span class="text-2xl" *ngIf="!cert.issuer.includes('Microsoft') && !cert.issuer.includes('Google')">📜</span>
+                 <div class="p-3 bg-white dark:bg-slate-800 rounded-lg shadow-sm w-16 h-16 flex items-center justify-center">
+                    <img *ngIf="cert.image" [src]="cert.image" [alt]="cert.name" class="w-full h-full object-contain">
                  </div>
-                 <span class="text-xs font-bold px-2 py-1 bg-gray-200 dark:bg-slate-600 rounded text-gray-700 dark:text-gray-300">
-                    {{ cert.date }}
-                 </span>
               </div>
 
               <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
                  {{ cert.name }}
               </h3>
               <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                 Issued by {{ cert.issuer }}
+                 Issued by {{ cert.issuer }} In {{ cert.date }}
               </p>
 
               <a [href]="cert.verificationLink || '#'" 

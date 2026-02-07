@@ -4,10 +4,10 @@ import { ContentService } from '../../services/content.service';
 import { PortfolioContent } from '../../models/content.model';
 
 @Component({
-    selector: 'app-about',
-    standalone: true,
-    imports: [CommonModule],
-    template: `
+  selector: 'app-about',
+  standalone: true,
+  imports: [CommonModule],
+  template: `
     <section id="about" class="py-20 bg-white dark:bg-slate-800 transition-colors duration-300">
       <div class="container mx-auto px-4" *ngIf="content">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white" data-aos="fade-up">
@@ -20,7 +20,7 @@ import { PortfolioContent } from '../../models/content.model';
           <div class="w-full md:w-1/3 flex justify-center" data-aos="fade-right">
             <div class="relative group">
               <div class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-xl opacity-75 group-hover:opacity-100 blur transition duration-500"></div>
-              <img [src]="content.personal.profileImage || 'assets/images/profile.jpg'" 
+              <img [src]="content.personal.profileImage || 'assets/images/profile_pictures/rami_desk.png'" 
                    alt="Profile" 
                    class="relative w-64 h-80 object-cover rounded-xl shadow-2xl transform transition duration-500 group-hover:scale-105"
               >
@@ -84,9 +84,9 @@ import { PortfolioContent } from '../../models/content.model';
   `
 })
 export class AboutComponent implements OnInit {
-    content: PortfolioContent | null = null;
-    constructor(private contentService: ContentService) { }
-    ngOnInit() {
-        this.contentService.getContent().subscribe(data => this.content = data);
-    }
+  content: PortfolioContent | null = null;
+  constructor(private contentService: ContentService) { }
+  ngOnInit() {
+    this.contentService.getContent().subscribe(data => this.content = data);
+  }
 }

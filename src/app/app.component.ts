@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
       duration: 800,
       once: true,
       mirror: false,
-      offset: 100
+      offset: 0
     });
   }
 

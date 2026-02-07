@@ -24,15 +24,15 @@ declare const grecaptcha: any;
           
           <!-- Contact Info -->
           <div class="w-full md:w-1/3 space-y-8" data-aos="fade-right">
-             <div class="flex items-start space-x-4">
+             <!-- <div class="flex items-start space-x-4">
                <div class="p-3 bg-primary/10 rounded-lg text-primary">
                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                </div>
                <div>
                  <h3 class="text-lg font-bold text-gray-900 dark:text-white">Email</h3>
-                 <a href="mailto:ramibenothmen15@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">ramibenothmen15@gmail.com</a>
+                 <a href="mailto:[EMAIL_ADDRESS]" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">[EMAIL_ADDRESS]</a>
                </div>
-             </div>
+             </div> -->
 
              <div class="flex items-start space-x-4">
                <div class="p-3 bg-primary/10 rounded-lg text-primary">
@@ -68,7 +68,7 @@ declare const grecaptcha: any;
                          class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                          placeholder="Your Name"
                   >
-                  <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="text-red-500 text-xs mt-1">Name is required</div>
+                  <!-- <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="text-red-500 text-xs mt-1">Name is required</div> -->
                 </div>
                 <div>
                   <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>

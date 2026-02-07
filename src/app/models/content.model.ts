@@ -70,4 +70,5 @@ export interface Certification {
     issuer: string;
     date: string;
     verificationLink?: string;
+    image?: string;
 }
