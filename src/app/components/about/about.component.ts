@@ -20,7 +20,7 @@ import { PortfolioContent } from '../../models/content.model';
           <div class="w-full md:w-1/3 flex justify-center" data-aos="fade-right">
             <div class="relative group">
               <div class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-xl opacity-75 group-hover:opacity-100 blur transition duration-500"></div>
-              <img [src]="content.personal.profileImage || 'assets/images/profile_pictures/rami_desk.png'" 
+              <img [src]="content.personal.profileImage || 'assets/images/profile_pictures/rami_caricature.png'" 
                    alt="Profile" 
                    class="relative w-64 h-80 object-cover rounded-xl shadow-2xl transform transition duration-500 group-hover:scale-105"
               >

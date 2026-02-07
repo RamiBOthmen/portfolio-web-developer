@@ -153,16 +153,70 @@
     ],
     "certifications": [
         {
-            "name": "Microsoft Azure AI Fundamentals",
-            "issuer": "Microsoft",
-            "date": "2023",
-            "image": "assets/images/certifications/ai.png"
-        },
-        {
             "name": "English (Level C1)",
             "issuer": "EF Set",
             "date": "2024",
             "image": "assets/images/certifications/english.png"
+        },
+        {
+            "name": "Azure AI Fundamentals",
+            "issuer": "Microsoft Technology Associate",
+            "date": "2023",
+            "image": "assets/images/certifications/ai.png"
+        },
+        {
+            "name": "Scrum Fundamentals Certified (SFC™)",
+            "issuer": "SCRUM Study",
+            "date": "2023",
+            "image": "assets/images/certifications/scrum.png"
+        },
+        {
+            "name": "Java",
+            "issuer": "Microsoft Technology Associate",
+            "date": "2023",
+            "image": "assets/images/certifications/java.png"
+        },
+        {
+            "name": "Python",
+            "issuer": "Microsoft Technology Associate",
+            "date": "2023",
+            "image": "assets/images/certifications/python.png"
+        },
+        {
+            "name": "JavaScript",
+            "issuer": "Microsoft Technology Associate",
+            "date": "2023",
+            "image": "assets/images/certifications/js.png"
+        },
+        {
+            "name": "Microsoft Office Word",
+            "issuer": "Microsoft Office Specialist",
+            "date": "2023",
+            "image": "assets/images/certifications/word.png"
+        },
+        {
+            "name": "Microsoft Office Excel",
+            "issuer": "Microsoft Office Specialist",
+            "date": "2023",
+            "image": "assets/images/certifications/excel.png"
+        },
+        {
+            "name": "Microsoft Office PowerPoint",
+            "issuer": "Microsoft Office Specialist",
+            "date": "2023",
+            "image": "assets/images/certifications/ppt.png"
+        },
+        {
+            "name": "SQL (Advanced)",
+            "issuer": "HackerRank",
+            "date": "2023",
+            "image": "assets/images/certifications/sql-a.png"
+        },
+        {
+            "name": "Windows Operating System",
+            "issuer": "Microsoft Technology Associate",
+            "date": "2023",
+            "image": "assets/images/certifications/wos.png"
         }
     ]
 }
