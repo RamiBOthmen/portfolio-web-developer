@@ -63,7 +63,7 @@ import { PortfolioContent, Project } from '../../models/content.model';
                    <p class="text-gray-600 dark:text-gray-300 mb-6">{{ project.description }}</p>
                    
                    <div class="flex justify-center space-x-4">
-                      <a [href]="project.link" class="px-6 py-2 bg-primary text-white rounded-full hover:bg-indigo-700 transition-colors" target="_blank">View Live</a>
+                      <!-- <a [href]="project.link" class="px-6 py-2 bg-primary text-white rounded-full hover:bg-indigo-700 transition-colors" target="_blank">View Live</a> -->
                       <a [href]="project.repo" class="px-6 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full hover:border-primary hover:text-primary transition-colors" target="_blank">GitHub</a>
                    </div>
 

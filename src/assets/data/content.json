@@ -95,33 +95,70 @@
     ],
     "projects": [
         {
+            "id": "dari",
+            "title": "Dari",
+            "subtitle": "AI Driven House Rental Platform",
+            "description": "Full-stack rental web application, with AI-powered image filtering (NSFW Detection and Scene Recognition) and robust Security measures against attacks.",
+            "technologies": [
+                "Spring Boot",
+                "Angular",
+                "Python",
+                "PostgreSQL",
+                "Hugging Face",
+                "Git/GitHub"
+            ],
+            "image": "assets/images/projects/dari.png",
+            "link": "#",
+            "repo": "https://github.com/RBenOthmen/JobyHunter-BackEnd-Test.git"
+        },
+        {
             "id": "jobhunter",
-            "title": "JobHunter",
-            "subtitle": "AI Talent Acquisition",
+            "title": "JobyHunter",
+            "subtitle": "AI Talent Acquisition Platform",
             "description": "Cut response times by 20%, hiring efficiency +30%. Features AI-driven insights and scraping.",
             "technologies": [
                 "Python",
                 "ASP.NET Core",
                 "Angular",
-                "MongoDB"
+                "MongoDB",
+                "SQL Server",
+                "Gemini AI",
+                "Selenium"
             ],
             "image": "assets/images/projects/jobyhunter.png",
             "link": "#",
-            "repo": "#"
+            "repo": "https://github.com/RBenOthmen/JobyHunter-BackEnd-Test.git"
+        },
+        {
+            "id": "AutoCorrectGPT",
+            "title": "AutoCorrectGPT",
+            "subtitle": "Automated Exam Grading System",
+            "description": "An intelligent evaluation system that automates the assessment of student answers and generates detailed performance reports. It streamlines the grading process by providing objective scoring and professional summaries, reducing administrative workload while delivering faster feedback.",
+            "technologies": [
+                "Gemini API",
+                "Flask",
+                "Git/GitHub"
+            ],
+            "image": "assets/images/projects/autocorrect.png",
+            "link": "#",
+            "repo": "https://github.com/RBenOthmen/JobyHunter-BackEnd-Test.git"
         },
         {
             "id": "pronunciation",
-            "title": "English Pronunciation Platform",
-            "subtitle": "EdTech Solution",
+            "title": "English for Lazy",
+            "subtitle": "English Pronunciation Learning Platform",
             "description": "Boosted user engagement by 25%. Managed with SCRUM.",
             "technologies": [
                 "Angular",
                 "Django",
-                "MySQL"
+                "MySQL",
+                "Python",
+                "HTML5/CSS3",
+                "TypeScript"
             ],
             "image": "assets/images/projects/english_4_lazy.png",
             "link": "#",
-            "repo": "#"
+            "repo": "https://github.com/RBenOthmen/E4L.git"
         }
     ],
     "experience": [
@@ -156,67 +193,78 @@
             "name": "English (Level C1)",
             "issuer": "EF Set",
             "date": "2024",
-            "image": "assets/images/certifications/english.png"
+            "image": "assets/images/certifications/english.png",
+            "verificationLink": "https://drive.google.com/file/d/1AnyQ1rtpipxyGJyXCSkzs1PhbsT2tf0y/view?usp=sharing"
         },
         {
             "name": "Azure AI Fundamentals",
             "issuer": "Microsoft Technology Associate",
             "date": "2023",
-            "image": "assets/images/certifications/ai.png"
+            "image": "assets/images/certifications/ai.png",
+            "verificationLink": "https://www.credly.com/badges/fe102da5-9ea8-4ae8-886b-8e08a0590ce7/public_url"
         },
         {
             "name": "Scrum Fundamentals Certified (SFC™)",
             "issuer": "SCRUM Study",
             "date": "2023",
-            "image": "assets/images/certifications/scrum.png"
+            "image": "assets/images/certifications/scrum.png",
+            "verificationLink": "https://www.scrumstudy.com/certification/verify?type=SFC&number= 955990"
         },
         {
             "name": "Java",
             "issuer": "Microsoft Technology Associate",
             "date": "2023",
-            "image": "assets/images/certifications/java.png"
+            "image": "assets/images/certifications/java.png",
+            "verificationLink": "https://www.credly.com/badges/890818f7-d160-4185-a007-532e97b3ec3f/public_url"
         },
         {
             "name": "Python",
             "issuer": "Microsoft Technology Associate",
             "date": "2023",
-            "image": "assets/images/certifications/python.png"
+            "image": "assets/images/certifications/python.png",
+            "verificationLink": "https://www.credly.com/badges/5d005f88-2707-4bc4-993a-ca1eac590f83/public_url"
         },
         {
             "name": "JavaScript",
             "issuer": "Microsoft Technology Associate",
             "date": "2023",
-            "image": "assets/images/certifications/js.png"
+            "image": "assets/images/certifications/js.png",
+            "verificationLink": "https://www.credly.com/badges/a6516c0c-6a11-4d00-a1f5-c267ded6be08/public_url"
         },
         {
             "name": "Microsoft Office Word",
             "issuer": "Microsoft Office Specialist",
             "date": "2023",
-            "image": "assets/images/certifications/word.png"
+            "image": "assets/images/certifications/word.png",
+            "verificationLink": ""
         },
         {
             "name": "Microsoft Office Excel",
             "issuer": "Microsoft Office Specialist",
             "date": "2023",
-            "image": "assets/images/certifications/excel.png"
+            "image": "assets/images/certifications/excel.png",
+            "verificationLink": "https://www.credly.com/badges/a22ab533-2ab4-48a6-afc1-f0ba541fce18/public_url"
         },
         {
             "name": "Microsoft Office PowerPoint",
             "issuer": "Microsoft Office Specialist",
             "date": "2023",
-            "image": "assets/images/certifications/ppt.png"
+            "image": "assets/images/certifications/ppt.png",
+            "verificationLink": "https://www.credly.com/badges/4865ab3f-a2e9-4efc-8ab2-7b80b2f1352a/public_url"
         },
         {
             "name": "SQL (Advanced)",
             "issuer": "HackerRank",
             "date": "2023",
-            "image": "assets/images/certifications/sql-a.png"
+            "image": "assets/images/certifications/sql-a.png",
+            "verificationLink": "https://www.hackerrank.com/certificates/c15b1ab417f7"
         },
         {
             "name": "Windows Operating System",
             "issuer": "Microsoft Technology Associate",
             "date": "2023",
-            "image": "assets/images/certifications/wos.png"
+            "image": "assets/images/certifications/wos.png",
+            "verificationLink": ""
         }
     ]
 }
