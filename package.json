@@ -35,7 +35,7 @@
     "@angular/router": "^21.1.0",
     "aos": "^2.3.4",
     "ng-particles": "^3.12.0",
-    "ng-recaptcha": "^13.2.1",
+    "ng-recaptcha-2": "^21.0.0",
     "ngx-typed-js": "^2.1.1",
     "nodemailer": "^8.0.0",
     "rxjs": "~7.8.0",
