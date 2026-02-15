@@ -12,9 +12,9 @@ Add these to Vercel Project Settings > Environment Variables:
 
 | Variable | Description |
 |----------|-------------|
-| `SENDGRID_API_KEY` | SendGrid API Key (starts with `SG.`) |
+| `SENDGRID_API_KEY` | Brevo SMTP Key (Master Password) |
 | `RECAPTCHA_SECRET_KEY` | Google reCAPTCHA v2 Secret Key |
-| `FROM_EMAIL` | Verified Sender Email in SendGrid |
+| `FROM_EMAIL` | Your Brevo Login Email |
 | `TO_EMAIL` | Your personal email (ramibenothmen15@gmail.com) |
 
 ## 3. Local Development with API

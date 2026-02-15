@@ -38,19 +38,19 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             return res.status(400).json({ error: 'Invalid reCAPTCHA', details: recaptchaData });
         }
 
-        // 2. Transporter
+        // 2. Transporter (Brevo/Sendinblue)
         const transporter = nodemailer.createTransport({
-            host: 'smtp.sendgrid.net',
+            host: 'smtp-relay.brevo.com',
             port: 587,
             auth: {
-                user: 'apikey',
-                pass: process.env['SENDGRID_API_KEY']
+                user: process.env['FROM_EMAIL'], // Your Brevo login email
+                pass: process.env['SENDGRID_API_KEY'] // Your Brevo SMTP Master Password
             }
         });
 
         // 3. Send Email
         await transporter.sendMail({
-            from: process.env['FROM_EMAIL'], // Must be verified in SendGrid
+            from: process.env['FROM_EMAIL'], 
             to: process.env['TO_EMAIL'],
             subject: `Portfolio Contact: ${subject || 'No Subject'}`,
             text: `Name: ${name}\nEmail: ${email}\n\n${message}`,

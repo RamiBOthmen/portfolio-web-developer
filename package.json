@@ -50,13 +50,14 @@
     "@tailwindcss/postcss": "^4.1.18",
     "@types/aos": "^3.0.7",
     "@types/node": "^22.0.0",
+    "@types/nodemailer": "^6.4.17",
     "@vercel/node": "^5.0.0",
     "autoprefixer": "^10.4.24",
     "jsdom": "^26.0.0",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "tailwindcss": "^4.1.18",
-    "typescript": "~5.7.2",
+    "typescript": "~5.9.2",
     "vitest": "^3.0.0"
   },
   "engines": {
