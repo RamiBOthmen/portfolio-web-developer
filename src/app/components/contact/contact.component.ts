@@ -163,7 +163,7 @@ export class ContactComponent implements AfterViewInit {
     if (typeof grecaptcha !== 'undefined') {
       try {
         grecaptcha.render(this.recaptchaContainer.nativeElement, {
-          'sitekey': '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', // Demo key
+          'sitekey': '6Lfa_GssAAAAAJuYUy2cGQuTHY24ixKD8QadsENy',
           'callback': (token: string) => {
             this.ngZone.run(() => {
               this.recaptchaToken = token;
