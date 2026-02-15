@@ -10,25 +10,26 @@ import AOS from 'aos';
   standalone: true,
   imports: [CommonModule, NgxTypedJsModule],
   template: `
-    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-slate-900 dark:to-slate-800">
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-slate-900 dark:to-slate-800" style="display: flex !important; opacity: 1 !important; visibility: visible !important;">
       
-      <!-- Background Shapes (CSS only for performance/simplicity, fallback if particles issues) -->
-      <div class="absolute inset-0 overflow-hidden">
+      <!-- Background Shapes -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
         <div class="absolute top-40 -left-40 w-72 h-72 bg-secondary/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s"></div>
       </div>
 
-      <div class="container mx-auto px-4 z-10 flex flex-col md:flex-row items-center justify-between" *ngIf="content">
+      <div class="container mx-auto px-4 z-20 flex flex-col md:flex-row items-center justify-between">
         
         <!-- Text Content -->
-        <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0 fade-in-up">
+        <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0 hero-content-container">
           <p class="text-lg md:text-xl text-primary font-semibold mb-4">Hello, I'm</p>
           <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
-            {{ content.personal.name }}
+            {{ content?.personal?.name || 'Rami Ben Othmen' }}
           </h1>
           
           <div class="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-8 h-12">
             <ngx-typed-js 
+              *ngIf="typingStrings.length > 0"
               [strings]="typingStrings" 
               [typeSpeed]="50" 
               [backSpeed]="30" 
@@ -37,10 +38,11 @@ import AOS from 'aos';
             >
               <span class="typing"></span>
             </ngx-typed-js>
+            <span *ngIf="typingStrings.length === 0">{{ content?.personal?.title || 'Full-Stack Developer' }}</span>
           </div>
 
           <p class="text-gray-600 dark:text-gray-400 max-w-lg mx-auto md:mx-0 mb-8 leading-relaxed">
-            {{ content.personal.about }}
+            {{ content?.personal?.about }}
           </p>
 
           <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
@@ -55,19 +57,19 @@ import AOS from 'aos';
           <div class="mt-12 flex items-center justify-center md:justify-start space-x-8">
             <div class="text-center">
               <span class="block text-3xl font-bold text-gray-900 dark:text-white">
-                {{ content.personal.yearsExperience }}+
+                {{ content?.personal?.yearsExperience || 2 }}+
               </span>
               <span class="text-sm text-gray-500 dark:text-gray-400">Years Exp.</span>
             </div>
             <div class="text-center">
               <span class="block text-3xl font-bold text-gray-900 dark:text-white">
-                {{ content.personal.projectsCount }}+
+                {{ content?.personal?.projectsCount || 20 }}+
               </span>
               <span class="text-sm text-gray-500 dark:text-gray-400">Projects</span>
             </div>
             <div class="text-center">
               <span class="block text-3xl font-bold text-gray-900 dark:text-white">
-                {{ content.personal.certificationsCount }}+
+                {{ content?.personal?.certificationsCount || 10 }}+
               </span>
               <span class="text-sm text-gray-500 dark:text-gray-400">Certs</span>
             </div>
@@ -75,7 +77,7 @@ import AOS from 'aos';
         </div>
 
         <!-- Profile Image -->
-        <div class="md:w-1/2 flex justify-center sticky top-0 fade-in" style="animation-delay: 0.3s">
+        <div class="md:w-1/2 flex justify-center sticky top-0 hero-image-container">
           <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
             <!-- Glowing Ring -->
             <div class="absolute inset-0 rounded-full border-4 border-primary/30 animate-spin-slow"></div>
@@ -83,13 +85,13 @@ import AOS from 'aos';
             
             <!-- Image -->
             <div class="absolute inset-4 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
-              <img [src]="content.personal.profileImage || 'assets/images/profile_pictures/rami_linkedin.jpeg'" 
+              <img [src]="content?.personal?.profileImage || 'assets/images/profile_pictures/rami_linkedin.jpeg'" 
                    alt="Profile" 
                    class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
               >
             </div>
             
-            <!-- Floating Skills Icons (Decorative) -->
+            <!-- Floating Skills Icons -->
             <div class="absolute -top-4 -right-4 w-12 h-12 bg-white dark:bg-slate-800 rounded-full shadow-lg flex items-center justify-center animate-bounce">
               <span class="text-xl">💻</span>
             </div>
@@ -117,25 +119,11 @@ import AOS from 'aos';
     .animate-spin-reverse-slow {
       animation: spin-reverse-slow 10s linear infinite;
     }
-    .fade-in {
-      animation: fadeIn 1s ease-out forwards;
-    }
-    .fade-in-up {
-      animation: fadeInUp 1s ease-out forwards;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes fadeInUp {
-      from { 
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to { 
-        opacity: 1;
-        transform: translateY(0);
-      }
+
+    #hero, #hero * {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
     }
   `]
 })
@@ -154,9 +142,12 @@ export class HeroComponent implements OnInit {
         'Full-Stack Developer',
         'Problem Solver'
       ];
-      setTimeout(() => {
-        AOS.refresh();
-      }, 100);
+
+      // Multi-phase refresh to ensure AOS detects the dynamic content
+      AOS.refresh();
+      setTimeout(() => AOS.refresh(), 100);
+      setTimeout(() => AOS.refresh(), 500);
+      setTimeout(() => AOS.refresh(), 1500);
     });
   }
 }
