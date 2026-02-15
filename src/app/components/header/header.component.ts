@@ -70,6 +70,7 @@ export class HeaderComponent {
         { label: 'Skills', href: '#skills' },
         { label: 'Projects', href: '#projects' },
         { label: 'Experience', href: '#timeline' },
+        { label: 'Certifications', href: '#certifications' },
         { label: 'Contact', href: '#contact' }
     ];
 
