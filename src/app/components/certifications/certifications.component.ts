@@ -21,7 +21,7 @@ import { PortfolioContent } from '../../models/content.model';
                 [attr.data-aos-delay]="i * 100"
            >
               <div class="flex items-start justify-between mb-4">
-                 <div class="p-3 bg-white dark:bg-slate-800 rounded-lg shadow-sm w-16 h-16 flex items-center justify-center">
+                 <div class="p-3 bg-white dark:bg-slate-800 rounded-lg shadow-sm w-32 h-32 mx-auto flex items-center justify-center">
                     <img *ngIf="cert.image" [src]="cert.image" [alt]="cert.name" class="w-full h-full object-contain">
                  </div>
               </div>
