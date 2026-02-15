@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import nodemailer from 'nodemailer';
+import * as nodemailer from 'nodemailer';
 
 // If node-fetch is needed for older node versions, import it. Vercel Node 18 has global fetch.
 
@@ -43,14 +43,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             host: 'smtp-relay.brevo.com',
             port: 587,
             auth: {
-                user: process.env['FROM_EMAIL'], // Your Brevo login email
-                pass: process.env['SENDGRID_API_KEY'] // Your Brevo SMTP Master Password
+                user: process.env['SMTP_USER'],
+                pass: process.env['SMTP_PASSWORD']
             }
         });
 
         // 3. Send Email
-        await transporter.sendMail({
-            from: process.env['FROM_EMAIL'], 
+        const info = await transporter.sendMail({
+            from: `"${name}" <${process.env['FROM_EMAIL']}>`, // Must be a verified sender in Brevo
+            replyTo: email,
             to: process.env['TO_EMAIL'],
             subject: `Portfolio Contact: ${subject || 'No Subject'}`,
             text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
@@ -63,6 +64,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         <p>${message.replace(/\n/g, '<br>')}</p>
       `
         });
+
+        console.log('Email sent successfully:', info.messageId);
 
         return res.status(200).json({ success: true });
 
