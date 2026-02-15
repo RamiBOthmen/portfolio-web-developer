@@ -17,7 +17,7 @@ declare const grecaptcha: any;
           Get In Touch
         </h2>
         <p class="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          Have a project in mind or want to discuss the latest tech? I'm always open to new opportunities and collaborations. I typically respond within 24 hours.
+          I am actively seeking a Full-Stack Web Developer position. If you are hiring, I would be glad to discuss how my skills in frontend, backend, and web security can contribute to your team.
         </p>
 
         <div class="flex flex-col md:flex-row gap-12 max-w-5xl mx-auto">

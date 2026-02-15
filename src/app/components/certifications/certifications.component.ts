@@ -20,11 +20,9 @@ import { PortfolioContent } from '../../models/content.model';
                 [attr.data-aos]="'zoom-in'"
                 [attr.data-aos-delay]="i * 100"
            >
-              <div class="flex items-start justify-between mb-4">
-                 <div class="p-3 bg-white dark:bg-slate-800 rounded-lg shadow-sm w-32 h-32 mx-auto flex items-center justify-center">
-                    <img *ngIf="cert.image" [src]="cert.image" [alt]="cert.name" class="w-full h-full object-contain">
-                 </div>
-              </div>
+               <div class="relative w-full aspect-[16/10] bg-white dark:bg-slate-800 rounded-lg shadow-sm mb-6 flex items-center justify-center overflow-hidden">
+                  <img *ngIf="cert.image" [src]="cert.image" [alt]="cert.name" class="w-full h-full object-contain p-2 transform group-hover:scale-105 transition-transform duration-500">
+               </div>
 
               <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
                  {{ cert.name }}
