@@ -177,6 +177,12 @@
     ],
     "education": [
         {
+            "school": "Hack The Box",
+            "degree": "Web Penetration Tester",
+            "period": "Nov 2025 - Feb 2026",
+            "details": "SQL Injection, XSS, File Upload vulnerabilities and Secure HTTP practices."
+        },
+        {
             "school": "ISET Zaghouan",
             "degree": "Master's in Engineering of Information Systems",
             "period": "2022-2024",
