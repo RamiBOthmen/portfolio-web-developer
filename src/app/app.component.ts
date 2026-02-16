@@ -10,6 +10,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { CertificationsComponent } from './components/certifications/certifications.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { Meta, Title } from '@angular/platform-browser';
+import { ContentService } from './services/content.service';
 import AOS from 'aos';
 
 @Component({
@@ -18,7 +19,7 @@ import AOS from 'aos';
   imports: [CommonModule, HeaderComponent, FooterComponent, HeroComponent, AboutComponent, SkillsComponent, ProjectsComponent, TimelineComponent, CertificationsComponent, ContactComponent],
   template: `
     <app-header></app-header>
-    <main class="pt-16 min-h-screen">
+    <main class="pt-16 min-h-screen transition-opacity duration-500" [class.opacity-0]="!isLoaded" [class.pointer-events-none]="!isLoaded">
       <app-hero></app-hero>
       <app-about></app-about>
       <app-skills></app-skills>
@@ -27,19 +28,61 @@ import AOS from 'aos';
       <app-certifications></app-certifications>
       <app-contact></app-contact>
     </main>
+    
+    <!-- Loading State -->
+    <div *ngIf="!isLoaded" class="fixed inset-0 z-40 bg-white dark:bg-slate-900 flex items-center justify-center">
+      <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+    </div>
+
     <app-footer></app-footer>
   `
 })
 export class AppComponent implements OnInit {
-  constructor(private meta: Meta, private title: Title) { }
+  isLoaded = false;
+
+  constructor(
+    private meta: Meta,
+    private title: Title,
+    private contentService: ContentService
+  ) { }
 
   ngOnInit() {
     this.setupSEO();
-    AOS.init({
-      duration: 800,
-      once: true,
-      mirror: false,
-      offset: 0
+
+    // Wait for content 
+    this.contentService.getContent().subscribe({
+      next: () => {
+        // Set loaded to show content
+        this.isLoaded = true;
+
+        // Wait for DOM to be visible for AOS and scroll calculations
+        setTimeout(() => {
+          // Initialize/Refresh AOS now that content is visible
+          AOS.init({
+            duration: 800,
+            once: true,
+            mirror: false,
+            offset: 0
+          });
+          AOS.refresh();
+
+          // Force a scroll event to trigger AOS for elements currently in view
+          window.dispatchEvent(new Event('scroll'));
+
+          // If there's a hash in the URL, scroll to it now that content is visible
+          const hash = window.location.hash;
+          if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        }, 200);
+      },
+      error: (err) => {
+        console.error('Initial load failed', err);
+        this.isLoaded = true;
+      }
     });
   }
 

@@ -143,11 +143,8 @@ export class HeroComponent implements OnInit {
         'Problem Solver'
       ];
 
-      // Multi-phase refresh to ensure AOS detects the dynamic content
+      // Refresh AOS after content is in DOM
       AOS.refresh();
-      setTimeout(() => AOS.refresh(), 100);
-      setTimeout(() => AOS.refresh(), 500);
-      setTimeout(() => AOS.refresh(), 1500);
     });
   }
 }
