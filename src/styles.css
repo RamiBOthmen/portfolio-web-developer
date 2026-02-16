@@ -6,6 +6,9 @@
   --color-secondary: #10B981;
 }
 
+@variant dark (&:where(.dark, .dark *));
+
+
 
 html,
 body {
