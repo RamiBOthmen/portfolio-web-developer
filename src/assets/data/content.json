@@ -2,15 +2,15 @@
     "personal": {
         "name": "Rami Ben Othmen",
         "title": "Full-Stack Developer",
-        "email": "",
+        "email": "ramibenothmen15@gmail.com",
         "location": "Tunisia",
         "linkedIn": "https://linkedin.com/in/rami-ben-othmen",
         "github": "https://github.com/RBenOthmen",
-        "tagline": "Building Secure & Scalable Applications",
+        "tagline": "Building Secure and Scalable Applications",
         "about": "A highly competent Web Developer with a proven track record of building real-world applications. Skilled in planning, implementing, and monitoring web solutions, with additional strengths in project and database management. Driven by a strong passion for using technical expertise to support people and organizations.",
-        "yearsExperience": 2,
+        "yearsExperience": 1,
         "projectsCount": 10,
-        "certificationsCount": 5,
+        "certificationsCount": 15,
         "languages": [
             {
                 "name": "Arabic",
@@ -109,7 +109,7 @@
             ],
             "image": "assets/images/projects/dari.png",
             "link": "#",
-            "repo": "https://github.com/RBenOthmen/JobyHunter-BackEnd-Test.git"
+            "repo": "https://github.com/RBenOthmen/Dari-BackEnd-.git"
         },
         {
             "id": "jobhunter",
@@ -141,7 +141,7 @@
             ],
             "image": "assets/images/projects/autocorrect.png",
             "link": "#",
-            "repo": "https://github.com/RBenOthmen/JobyHunter-BackEnd-Test.git"
+            "repo": "https://github.com/RBenOthmen/AutoCorrectGPT.git"
         },
         {
             "id": "pronunciation",
